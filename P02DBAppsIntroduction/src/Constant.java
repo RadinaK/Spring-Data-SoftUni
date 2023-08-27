@@ -7,4 +7,7 @@ enum Constant {
     final static String PASSWORD_VALUE = "1205";
 
     final static String JDBC_URL = "jdbc:mysql://localhost:3306/minions_db";
+
+    final static String COLUMN_LABEL_NAME = "name";
+    final static String COLUMN_LABEL_AGE = "age";
 }
