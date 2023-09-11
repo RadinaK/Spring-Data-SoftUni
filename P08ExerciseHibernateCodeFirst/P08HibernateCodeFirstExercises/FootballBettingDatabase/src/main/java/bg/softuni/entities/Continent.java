@@ -17,6 +17,6 @@ public class Continent extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String name;
 
-    @ManyToMany(mappedBy = "countries")
+    @ManyToMany(mappedBy = "continents")
     private Set<Country> countries;
 }
