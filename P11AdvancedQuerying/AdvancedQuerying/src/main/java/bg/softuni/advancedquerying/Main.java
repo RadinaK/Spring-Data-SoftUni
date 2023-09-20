@@ -1,6 +1,7 @@
 package bg.softuni.advancedquerying;
 
 import bg.softuni.advancedquerying.entities.Shampoo;
+import bg.softuni.advancedquerying.services.IngredientService;
 import bg.softuni.advancedquerying.services.ShampooService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -12,11 +13,13 @@ import java.util.Scanner;
 public class Main implements CommandLineRunner {
 
     private final ShampooService shampooService;
+    private final IngredientService ingredientService;
 
 
     @Autowired
-    public Main(ShampooService shampooService) {
+    public Main(ShampooService shampooService, IngredientService ingredientService) {
         this.shampooService = shampooService;
+        this.ingredientService = ingredientService;
     }
 
 
